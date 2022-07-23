@@ -26,12 +26,7 @@ object Spark15_RDD_Operator_Transform_reduceByKey {
             println(s"x = ${x}, y = ${y}")
             x + y
         } )
-
         reduceRDD.collect().foreach(println)
-
-
-
-
         sc.stop()
 
     }

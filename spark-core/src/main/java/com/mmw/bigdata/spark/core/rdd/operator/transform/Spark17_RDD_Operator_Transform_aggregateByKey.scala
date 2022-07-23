@@ -32,11 +32,7 @@ object Spark17_RDD_Operator_Transform_aggregateByKey {
             (x, y) => math.max(x, y),
             (x, y) => x + y
         ).collect.foreach(println)
-
-
-
-
-
+        
         sc.stop()
 
     }

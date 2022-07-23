@@ -25,8 +25,7 @@ object Spark16_RDD_Operator_Transform_groupByKey {
 
         val groupRDD1: RDD[(String, Iterable[(String, Int)])] = rdd.groupBy(_._1)
 
-
-
+        groupRDD1.collect().foreach(println)
 
         sc.stop()
 
